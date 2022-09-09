@@ -1,0 +1,80 @@
+.footer
+    position: relative
+.footer__main
+    padding: 50px 0
+.footer__widget
+    h6
+        font-size: 16px
+        font-weight: 700
+    p, a
+        font-size: 16px
+        color: #ffffff
+    ul
+        li
+            margin-bottom: 5px
+            a
+                &:hover
+                    color: $secondary_color
+.footer__widget--title
+    margin-bottom: 30px
+.footer__addrees--item
+    margin-bottom: 20px
+    h6
+        margin-bottom: 5px
+    a
+        font-size: 16px
+        color: $secondary_color
+        &:hover
+            color: #ffffff
+.footer__about
+    p
+        margin-bottom: 30px
+.footer__logo
+    margin-bottom: 20px
+    img
+        width: auto
+        height: 62px
+.social__sharing
+    li
+        a
+            background-color: $secondary_color
+            width: 40px
+            height: 40px
+            border-radius: 50%
+        &:not(:last-child)
+            margin-right: 10px
+.footer__copyright
+    .row
+        border-top: 1px solid rgba(255, 255, 255, 0.2)
+        padding: 30px 0
+.copyright__text
+    text-align: right
+    font-size: 16px
+
+@media (max-width: 991px)
+    .footer__main
+        .col-25
+            max-width: 50%
+            flex: 0 0 50%
+    .social__sharing
+        justify-content: center
+    .copyright__text
+        text-align: center
+        margin-top: 20px
+
+@media (max-width: 767px)
+    .footer__logo
+        img
+            height: 35px
+    .footer__widget
+        h6
+            font-size: 15px
+        p, a
+            font-size: 14px
+    .social__sharing
+        li
+            a
+                width: 30px
+                height: 30px
+    .copyright__text
+        font-size: 14px

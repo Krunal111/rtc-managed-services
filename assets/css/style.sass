@@ -1,0 +1,471 @@
+@import "_general"
+@import "_header"
+@import "_footer"
+
+/* Hero Block CSS Start */
+.home__hero--block
+    margin-top: 40px
+    .row
+        margin: 0
+        & > div
+            padding: 0
+.home__hero--content
+    p
+        margin-bottom: 30px
+/* Hero Block CSS End */
+
+/* Services Block CSS Start */
+.services--block
+    padding-bottom: 70px
+    overflow: hidden
+    &:before, &:after
+        content: ""
+        position: absolute
+        width: 100px
+        height: 100px
+        border: 20px solid $secondary_color
+        border-radius: 50%
+        animation: simple-move 4s 4s linear infinite alternate
+    &:before
+        top: 220px
+        left: -50px
+    &:after
+        bottom: -50px
+        right: 250px
+.services__list
+    .all__services
+        margin-top: -60px
+        display: inline-flex
+        float: right
+/* Services Block CSS End */
+
+/* Process Block CSS Start */
+.process--block
+    overflow: hidden
+    &:before
+        content: ""
+        position: absolute
+        top: 280px
+        left: -50px
+        width: 100px
+        height: 100px
+        border: 20px solid #F1F8E4
+        border-radius: 50%
+.process--icon
+    img
+        margin: 0 auto
+.process--title
+    margin-top: 20px
+.process--item
+    padding: 60px
+    .process--details
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: #ffffff
+        padding: 50px 20px
+        text-align: left
+        border-radius: 20px
+        opacity: 0
+        visibility: hidden
+        transition: all 0.6s ease-in-out
+        p
+            font-size: 16px
+    &:hover
+        .process--details
+            opacity: 1
+            visibility: visible
+            transition: all 0.6s ease-in-out
+/* Process Block CSS End */
+
+/* About Block CSS Start */
+.about_us--block
+    padding: 100px 0
+    background: transparent linear-gradient(180deg, #F1F8E3 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box
+.about_us--banner
+    position: relative
+    overflow: hidden
+    padding-top: 90%
+    img
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        object-fit: cover
+        border-radius: 30px
+.about_us__banner--col
+    position: relative
+    margin-right: 30px
+    z-index: 1
+    .dot__pattern
+        position: absolute
+        top: -50px
+        left: 60px
+        width: 155px
+        height: 155px
+    &:before
+        content: ""
+        position: absolute
+        top: -45px
+        right: 90px
+        width: 100px
+        height: 100px
+        border: 20px solid $secondary_color
+        border-radius: 50%
+        animation: simple-move 4s 4s linear infinite alternate
+    &:after
+        content: ""
+        position: absolute
+        bottom: -35px
+        left: 90px
+        width: 76px
+        height: 76px
+        background-color: #f1f8e4
+        border-radius: 50%
+        z-index: -1
+        animation: simple-move 4s 4s linear infinite alternate
+.about_us__title
+    h6, h2
+        margin-bottom: 10px
+    p
+        font-size: 16px
+        margin-bottom: 30px
+.company__service--item
+    margin-bottom: 30px
+    .company__service--icon
+        min-width: 60px
+        height: 60px
+        margin-right: 20px
+        background-color: #ffffff
+        border: 1px solid $secondary_color
+        border-radius: 50%
+    .company__service--des
+        h3
+            margin-bottom: 5px
+        p
+            font-size: 16px
+/* About Block CSS End */
+
+/* Team Block CSS Start */
+.team--block
+    .main__title
+        margin: 0 auto 50px
+        width: 65%
+    .row
+        margin: 0 -30px
+        .col-33
+            padding: 0 30px
+    &:before
+        content: ""
+        position: absolute
+        top: 23%
+        left: -12%
+        width: 360px
+        height: 360px
+        border-radius: 50%
+        background: transparent linear-gradient(180deg, #F1F8E3 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box
+        animation: simple-move 5s 5s linear infinite alternate
+.team--item
+    .team__img
+        position: relative
+        overflow: hidden
+        padding-top: 108%
+        img
+            width: 100%
+            height: 100%
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            object-fit: cover
+            border-radius: 10px
+    .team__details
+        margin-top: 30px
+        h3
+            margin-bottom: 5px
+        h6
+            font-weight: 500
+/* Team Block CSS End */
+
+/* Testimonials Block CSS Start */
+.testimonials--block
+    background: transparent linear-gradient(0deg, #F1F8E3 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box
+    padding: 100px 0
+    position: relative
+    z-index: 1
+.testimonials__shape_1
+    position: absolute
+    bottom: 100px
+    left: -50px
+    width: 100px
+    height: 100px
+    border: 20px solid #F1F8E4
+    border-radius: 50%
+    animation: simple-move 4s 4s linear infinite alternate
+.testimonials__shape_2
+    position: absolute
+    top: -20px
+    left: 30%
+    width: 72px
+    height: 72px
+    border: 20px solid #F1F8E4
+    border-radius: 50%
+    animation: simple-move 5s 5s linear infinite alternate
+.testimonials__shape_3
+    position: absolute
+    top: -20px
+    right: 30%
+    width: 36px
+    height: 36px
+    background-color: #f1f8e4
+    border-radius: 50%
+    animation: simple-move 6s 6s linear infinite alternate
+.testimonials__title
+    padding-right: 50px
+.testimonials__slider--col
+    width: 100%
+    height: 650px
+    overflow: hidden
+    position: relative
+.testimonials__slider
+    width: 100%
+    height: 100%
+    .swiper-slide
+        opacity: 0.4
+        &.swiper-slide-next
+            opacity: 1
+.testimonial--info
+    .user__img
+        min-width: 72px
+        width: 72px
+        height: 72px
+        border-radius: 50%
+        margin-right: 20px
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            border-radius: 50%
+.user__details
+    h6
+        margin-bottom: 0
+        font-weight: 600
+    p
+        font-size: 16px
+        font-weight: 600
+.testimonial--message
+    margin-top: 20px
+/* Testimonials Block CSS End */
+
+/* Contact Block CSS Start */
+.contact--block
+    .container
+        &:after
+            content: ""
+            position: absolute
+            bottom: -150px
+            right: 100px
+            width: 100px
+            height: 100px
+            border: 20px solid $secondary_color
+            border-radius: 50%
+            animation: simple-move 4s 4s linear infinite alternate
+    &:after
+        content: ""
+        position: absolute
+        top: 50px
+        right: -60px
+        width: 125px
+        height: 125px
+        background-color: #f1f8e4
+        border-radius: 50%
+    &:before
+        content: ""
+        position: absolute
+        top: -150px
+        left: 100px
+        width: 100px
+        height: 100px
+        border: 20px solid $secondary_color
+        border-radius: 50%
+.contact__title
+    margin-bottom: 50px
+/* Contact Block CSS End */
+
+@media (max-width: 1199px)
+    /* Process Block CSS Start */
+    .process--item
+        padding: 15px
+        .process--details
+            position: static
+            opacity: 1
+            visibility: visible
+            padding: 15px 0 0
+            text-align: center
+            p
+                font-size: 15px
+    .process--icon
+        img
+            width: 65px
+    /* Process Block CSS End */
+
+    /* Team Block CSS Start */
+    .team--block
+        .row
+            margin: 0 -15px
+            .col-33
+                padding: 0 15px
+        &:before
+            width: 250px
+            height: 250px
+    /* Team Block CSS End */
+
+    /* Testimonials Block CSS Start */
+    .testimonials--block
+        padding: 50px 0
+    .testimonials__title
+        padding-right: 10px
+    /* Testimonials Block CSS End */
+
+    /* Contact Block CSS Start */
+    .contact--block
+        .col-80
+            max-width: 100%
+            flex: 0 0 100%
+    /* Contact Block CSS End */
+
+@media (max-width: 991px)
+    /* Services Block CSS Start */
+    .services--block
+        &:after
+            right: 40px
+    .services__list
+        .all__services
+            margin: 0 0 40px
+            float: left
+    /* Services Block CSS End */
+
+    /* About Block CSS Start */
+    .about_us__banner--col
+        margin: 0 0 30px
+    /* About Block CSS End */
+
+    /* Team Block CSS Start */
+    .team--block
+        .row
+            .col-33
+                padding: 0 15px
+                max-width: 50%
+                flex: 0 0 50%
+                margin-bottom: 30px
+    /* Team Block CSS End */
+    
+    /* Testimonials Block CSS Start */
+    .testimonials__shape_2
+        border-width: 10px
+        width: 50px
+        height: 50px
+    .testimonials__title
+        padding: 0 0 30px
+    .testimonials__slider--col
+        height: 100%
+    .testimonials__slider
+        .swiper-slide
+            opacity: 1
+    /* Testimonials Block CSS End */
+
+@media (max-width: 767px)
+    /* Services Block CSS Start */
+    .services--block
+        &:before, &:after
+            border-width: 10px
+            width: 60px
+            height: 60px
+        &:before
+            top: 10%
+            left: -35px
+        &:after
+            bottom: -35px
+    /* Services Block CSS End */
+
+    /* Process Block CSS Start */
+    .process--block
+        &:before
+            width: 60px
+            height: 60px
+            border-width: 10px
+            left: -30px
+            top: 15%
+    /* Process Block CSS End */
+
+    /* About Block CSS Start */
+    .about_us--block
+        padding: 60px 0
+    .about_us__banner--col
+        .dot__pattern
+            width: 90px
+            height: 90px
+            top: -25px
+        &:before
+            width: 60px
+            height: 60px
+            border-width: 10px
+            top: -25px
+            right: 40px
+    /* About Block CSS End */
+
+    /* Team Block CSS Start */
+    .team--block
+        .main__title
+            width: 100%
+            margin-bottom: 30px
+        .row
+            .col-33
+                margin-bottom: 20px
+        &:before
+            width: 120px
+            height: 120px
+    .team--item
+        .team__details
+            margin-top: 10px
+            h3
+                font-size: 16px
+            h6
+                font-size: 12px
+    /* Team Block CSS End */
+
+    /* Testimonials Block CSS Start */
+    .testimonials__shape_3
+        width: 24px
+        height: 24px
+        right: 20px
+    .testimonial--info
+        .user__img
+            min-width: 50px
+            width: 50px
+            height: 50px
+            margin-right: 15px
+    .user__details
+        h6
+            font-size: 15px
+        p
+            font-size: 12px
+    .testimonial--message
+        p
+            font-size: 13px
+    /* Testimonials Block CSS End */
+
+    /* Contact Block CSS Start */
+    .contact--block
+        &:after
+            width: 90px
+            height: 90px
+            top: 0
+            right: -50px
+    /* Contact Block CSS End */
